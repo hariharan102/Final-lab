@@ -1,0 +1,2492 @@
+[
+    {
+        "timestamp": 0.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            164,
+            185,
+            229
+        ]
+    },
+    {
+        "timestamp": 0.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            162,
+            185,
+            231
+        ]
+    },
+    {
+        "timestamp": 0.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            162,
+            185,
+            231
+        ]
+    },
+    {
+        "timestamp": 0.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            161,
+            185,
+            231
+        ]
+    },
+    {
+        "timestamp": 0.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            160,
+            186,
+            233
+        ]
+    },
+    {
+        "timestamp": 0.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            160,
+            185,
+            233
+        ]
+    },
+    {
+        "timestamp": 0.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            159,
+            185,
+            234
+        ]
+    },
+    {
+        "timestamp": 0.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            159,
+            186,
+            233
+        ]
+    },
+    {
+        "timestamp": 0.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            159,
+            187,
+            233
+        ]
+    },
+    {
+        "timestamp": 0.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            160,
+            186,
+            232
+        ]
+    },
+    {
+        "timestamp": 0.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            159,
+            186,
+            233
+        ]
+    },
+    {
+        "timestamp": 0.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            160,
+            186,
+            231
+        ]
+    },
+    {
+        "timestamp": 0.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            159,
+            187,
+            230
+        ]
+    },
+    {
+        "timestamp": 0.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            159,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 0.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            159,
+            186,
+            229
+        ]
+    },
+    {
+        "timestamp": 0.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            161,
+            186,
+            226
+        ]
+    },
+    {
+        "timestamp": 0.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            160,
+            184,
+            227
+        ]
+    },
+    {
+        "timestamp": 0.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            161,
+            184,
+            227
+        ]
+    },
+    {
+        "timestamp": 0.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            162,
+            184,
+            227
+        ]
+    },
+    {
+        "timestamp": 0.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            162,
+            183,
+            227
+        ]
+    },
+    {
+        "timestamp": 0.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            393,
+            162,
+            184,
+            227
+        ]
+    },
+    {
+        "timestamp": 0.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            160,
+            185,
+            229
+        ]
+    },
+    {
+        "timestamp": 0.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            160,
+            186,
+            229
+        ]
+    },
+    {
+        "timestamp": 0.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            159,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 0.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            159,
+            187,
+            229
+        ]
+    },
+    {
+        "timestamp": 0.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            159,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 0.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            161,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 0.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            161,
+            184,
+            231
+        ]
+    },
+    {
+        "timestamp": 0.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            161,
+            183,
+            232
+        ]
+    },
+    {
+        "timestamp": 0.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            160,
+            185,
+            234
+        ]
+    },
+    {
+        "timestamp": 1.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            160,
+            187,
+            236
+        ]
+    },
+    {
+        "timestamp": 1.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            387,
+            162,
+            187,
+            234
+        ]
+    },
+    {
+        "timestamp": 1.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            161,
+            188,
+            238
+        ]
+    },
+    {
+        "timestamp": 1.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            160,
+            188,
+            240
+        ]
+    },
+    {
+        "timestamp": 1.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            160,
+            188,
+            240
+        ]
+    },
+    {
+        "timestamp": 1.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            160,
+            187,
+            241
+        ]
+    },
+    {
+        "timestamp": 1.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            161,
+            187,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            187,
+            238
+        ]
+    },
+    {
+        "timestamp": 1.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            161,
+            186,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            162,
+            186,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            187,
+            239
+        ]
+    },
+    {
+        "timestamp": 1.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            162,
+            186,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            186,
+            239
+        ]
+    },
+    {
+        "timestamp": 1.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            186,
+            239
+        ]
+    },
+    {
+        "timestamp": 1.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            185,
+            239
+        ]
+    },
+    {
+        "timestamp": 1.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            162,
+            186,
+            238
+        ]
+    },
+    {
+        "timestamp": 1.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            162,
+            186,
+            239
+        ]
+    },
+    {
+        "timestamp": 1.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            387,
+            165,
+            184,
+            235
+        ]
+    },
+    {
+        "timestamp": 1.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            166,
+            184,
+            235
+        ]
+    },
+    {
+        "timestamp": 1.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            164,
+            184,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            384,
+            164,
+            184,
+            238
+        ]
+    },
+    {
+        "timestamp": 1.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            383,
+            165,
+            185,
+            238
+        ]
+    },
+    {
+        "timestamp": 1.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            383,
+            164,
+            185,
+            237
+        ]
+    },
+    {
+        "timestamp": 1.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            384,
+            166,
+            184,
+            232
+        ]
+    },
+    {
+        "timestamp": 1.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            165,
+            184,
+            229
+        ]
+    },
+    {
+        "timestamp": 1.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            164,
+            185,
+            229
+        ]
+    },
+    {
+        "timestamp": 1.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            164,
+            185,
+            228
+        ]
+    },
+    {
+        "timestamp": 1.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            163,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 1.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            161,
+            187,
+            232
+        ]
+    },
+    {
+        "timestamp": 1.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            157,
+            188,
+            236
+        ]
+    },
+    {
+        "timestamp": 2.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            387,
+            157,
+            188,
+            237
+        ]
+    },
+    {
+        "timestamp": 2.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            159,
+            187,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            157,
+            187,
+            237
+        ]
+    },
+    {
+        "timestamp": 2.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            387,
+            158,
+            187,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            159,
+            187,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            384,
+            159,
+            187,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            384,
+            159,
+            187,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            384,
+            158,
+            186,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            158,
+            186,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            159,
+            187,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            159,
+            187,
+            235
+        ]
+    },
+    {
+        "timestamp": 2.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            386,
+            157,
+            189,
+            236
+        ]
+    },
+    {
+        "timestamp": 2.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            155,
+            188,
+            236
+        ]
+    },
+    {
+        "timestamp": 2.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            156,
+            183,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            154,
+            183,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            152,
+            183,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            402,
+            152,
+            177,
+            233
+        ]
+    },
+    {
+        "timestamp": 2.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            403,
+            153,
+            176,
+            233
+        ]
+    },
+    {
+        "timestamp": 2.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            154,
+            180,
+            231
+        ]
+    },
+    {
+        "timestamp": 2.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            402,
+            151,
+            177,
+            234
+        ]
+    },
+    {
+        "timestamp": 2.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            401,
+            152,
+            178,
+            233
+        ]
+    },
+    {
+        "timestamp": 2.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            149,
+            180,
+            238
+        ]
+    },
+    {
+        "timestamp": 2.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            144,
+            183,
+            245
+        ]
+    },
+    {
+        "timestamp": 2.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            136,
+            185,
+            255
+        ]
+    },
+    {
+        "timestamp": 2.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            132,
+            182,
+            261
+        ]
+    },
+    {
+        "timestamp": 2.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            389,
+            130,
+            181,
+            262
+        ]
+    },
+    {
+        "timestamp": 2.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            128,
+            181,
+            263
+        ]
+    },
+    {
+        "timestamp": 2.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            128,
+            183,
+            260
+        ]
+    },
+    {
+        "timestamp": 2.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            393,
+            128,
+            183,
+            259
+        ]
+    },
+    {
+        "timestamp": 2.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            129,
+            184,
+            258
+        ]
+    },
+    {
+        "timestamp": 3.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            127,
+            184,
+            260
+        ]
+    },
+    {
+        "timestamp": 3.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            124,
+            182,
+            259
+        ]
+    },
+    {
+        "timestamp": 3.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            124,
+            182,
+            255
+        ]
+    },
+    {
+        "timestamp": 3.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            121,
+            182,
+            258
+        ]
+    },
+    {
+        "timestamp": 3.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            120,
+            183,
+            260
+        ]
+    },
+    {
+        "timestamp": 3.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            118,
+            184,
+            261
+        ]
+    },
+    {
+        "timestamp": 3.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            119,
+            183,
+            260
+        ]
+    },
+    {
+        "timestamp": 3.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            118,
+            183,
+            262
+        ]
+    },
+    {
+        "timestamp": 3.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            119,
+            183,
+            261
+        ]
+    },
+    {
+        "timestamp": 3.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            119,
+            184,
+            260
+        ]
+    },
+    {
+        "timestamp": 3.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            119,
+            184,
+            260
+        ]
+    },
+    {
+        "timestamp": 3.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            120,
+            183,
+            258
+        ]
+    },
+    {
+        "timestamp": 3.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            398,
+            121,
+            183,
+            256
+        ]
+    },
+    {
+        "timestamp": 3.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            400,
+            121,
+            182,
+            257
+        ]
+    },
+    {
+        "timestamp": 3.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            400,
+            121,
+            181,
+            257
+        ]
+    },
+    {
+        "timestamp": 3.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            122,
+            182,
+            257
+        ]
+    },
+    {
+        "timestamp": 3.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            124,
+            181,
+            256
+        ]
+    },
+    {
+        "timestamp": 3.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            126,
+            180,
+            254
+        ]
+    },
+    {
+        "timestamp": 3.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            400,
+            128,
+            179,
+            253
+        ]
+    },
+    {
+        "timestamp": 3.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            130,
+            180,
+            252
+        ]
+    },
+    {
+        "timestamp": 3.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            133,
+            180,
+            248
+        ]
+    },
+    {
+        "timestamp": 3.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            398,
+            136,
+            180,
+            244
+        ]
+    },
+    {
+        "timestamp": 3.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            138,
+            181,
+            245
+        ]
+    },
+    {
+        "timestamp": 3.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            137,
+            182,
+            248
+        ]
+    },
+    {
+        "timestamp": 3.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            138,
+            182,
+            248
+        ]
+    },
+    {
+        "timestamp": 3.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            140,
+            183,
+            245
+        ]
+    },
+    {
+        "timestamp": 3.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            142,
+            182,
+            241
+        ]
+    },
+    {
+        "timestamp": 3.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            142,
+            182,
+            241
+        ]
+    },
+    {
+        "timestamp": 3.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            144,
+            182,
+            239
+        ]
+    },
+    {
+        "timestamp": 3.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            145,
+            183,
+            238
+        ]
+    },
+    {
+        "timestamp": 4.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            395,
+            143,
+            180,
+            237
+        ]
+    },
+    {
+        "timestamp": 4.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            393,
+            140,
+            182,
+            241
+        ]
+    },
+    {
+        "timestamp": 4.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            393,
+            139,
+            182,
+            241
+        ]
+    },
+    {
+        "timestamp": 4.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            392,
+            140,
+            181,
+            238
+        ]
+    },
+    {
+        "timestamp": 4.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            143,
+            183,
+            234
+        ]
+    },
+    {
+        "timestamp": 4.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            146,
+            183,
+            231
+        ]
+    },
+    {
+        "timestamp": 4.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            388,
+            146,
+            182,
+            230
+        ]
+    },
+    {
+        "timestamp": 4.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            144,
+            181,
+            230
+        ]
+    },
+    {
+        "timestamp": 4.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            391,
+            142,
+            182,
+            228
+        ]
+    },
+    {
+        "timestamp": 4.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            394,
+            139,
+            182,
+            232
+        ]
+    },
+    {
+        "timestamp": 4.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            140,
+            181,
+            229
+        ]
+    },
+    {
+        "timestamp": 4.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            398,
+            141,
+            180,
+            229
+        ]
+    },
+    {
+        "timestamp": 4.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            139,
+            181,
+            231
+        ]
+    },
+    {
+        "timestamp": 4.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            138,
+            181,
+            233
+        ]
+    },
+    {
+        "timestamp": 4.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            398,
+            138,
+            181,
+            235
+        ]
+    },
+    {
+        "timestamp": 4.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            138,
+            180,
+            235
+        ]
+    },
+    {
+        "timestamp": 4.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            138,
+            182,
+            234
+        ]
+    },
+    {
+        "timestamp": 4.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            396,
+            135,
+            183,
+            237
+        ]
+    },
+    {
+        "timestamp": 4.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            398,
+            133,
+            181,
+            240
+        ]
+    },
+    {
+        "timestamp": 4.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            399,
+            135,
+            180,
+            238
+        ]
+    },
+    {
+        "timestamp": 4.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            401,
+            139,
+            179,
+            235
+        ]
+    },
+    {
+        "timestamp": 4.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            401,
+            141,
+            179,
+            234
+        ]
+    },
+    {
+        "timestamp": 4.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            402,
+            142,
+            180,
+            233
+        ]
+    },
+    {
+        "timestamp": 4.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            401,
+            143,
+            180,
+            232
+        ]
+    },
+    {
+        "timestamp": 4.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            397,
+            143,
+            181,
+            233
+        ]
+    },
+    {
+        "timestamp": 4.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            390,
+            143,
+            182,
+            232
+        ]
+    },
+    {
+        "timestamp": 4.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            385,
+            143,
+            185,
+            230
+        ]
+    },
+    {
+        "timestamp": 4.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            382,
+            143,
+            182,
+            231
+        ]
+    },
+    {
+        "timestamp": 4.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            380,
+            142,
+            182,
+            233
+        ]
+    },
+    {
+        "timestamp": 4.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            381,
+            140,
+            181,
+            235
+        ]
+    },
+    {
+        "timestamp": 5.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            381,
+            133,
+            178,
+            245
+        ]
+    },
+    {
+        "timestamp": 5.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            381,
+            132,
+            178,
+            247
+        ]
+    },
+    {
+        "timestamp": 5.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            381,
+            124,
+            177,
+            256
+        ]
+    },
+    {
+        "timestamp": 5.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            376,
+            127,
+            181,
+            255
+        ]
+    },
+    {
+        "timestamp": 5.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            374,
+            130,
+            181,
+            253
+        ]
+    },
+    {
+        "timestamp": 5.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            371,
+            130,
+            184,
+            255
+        ]
+    },
+    {
+        "timestamp": 5.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            369,
+            131,
+            184,
+            256
+        ]
+    },
+    {
+        "timestamp": 5.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            369,
+            131,
+            184,
+            259
+        ]
+    },
+    {
+        "timestamp": 5.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            370,
+            131,
+            183,
+            256
+        ]
+    },
+    {
+        "timestamp": 5.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            372,
+            130,
+            182,
+            258
+        ]
+    },
+    {
+        "timestamp": 5.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            128,
+            183,
+            260
+        ]
+    },
+    {
+        "timestamp": 5.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            125,
+            183,
+            263
+        ]
+    },
+    {
+        "timestamp": 5.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            123,
+            182,
+            265
+        ]
+    },
+    {
+        "timestamp": 5.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            374,
+            123,
+            182,
+            265
+        ]
+    },
+    {
+        "timestamp": 5.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            121,
+            184,
+            268
+        ]
+    },
+    {
+        "timestamp": 5.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            375,
+            120,
+            183,
+            267
+        ]
+    },
+    {
+        "timestamp": 5.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            376,
+            121,
+            183,
+            265
+        ]
+    },
+    {
+        "timestamp": 5.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            123,
+            182,
+            261
+        ]
+    },
+    {
+        "timestamp": 5.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            378,
+            124,
+            181,
+            258
+        ]
+    },
+    {
+        "timestamp": 5.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            378,
+            122,
+            181,
+            261
+        ]
+    },
+    {
+        "timestamp": 5.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            122,
+            182,
+            263
+        ]
+    },
+    {
+        "timestamp": 5.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            120,
+            183,
+            263
+        ]
+    },
+    {
+        "timestamp": 5.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            121,
+            181,
+            261
+        ]
+    },
+    {
+        "timestamp": 5.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            123,
+            182,
+            257
+        ]
+    },
+    {
+        "timestamp": 5.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            123,
+            182,
+            261
+        ]
+    },
+    {
+        "timestamp": 5.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            125,
+            184,
+            262
+        ]
+    },
+    {
+        "timestamp": 5.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            375,
+            129,
+            183,
+            259
+        ]
+    },
+    {
+        "timestamp": 5.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            131,
+            183,
+            258
+        ]
+    },
+    {
+        "timestamp": 5.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            372,
+            133,
+            184,
+            257
+        ]
+    },
+    {
+        "timestamp": 5.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            372,
+            133,
+            184,
+            257
+        ]
+    },
+    {
+        "timestamp": 6.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            374,
+            134,
+            182,
+            255
+        ]
+    },
+    {
+        "timestamp": 6.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            375,
+            137,
+            182,
+            252
+        ]
+    },
+    {
+        "timestamp": 6.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            376,
+            140,
+            182,
+            251
+        ]
+    },
+    {
+        "timestamp": 6.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            378,
+            140,
+            181,
+            251
+        ]
+    },
+    {
+        "timestamp": 6.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            139,
+            181,
+            251
+        ]
+    },
+    {
+        "timestamp": 6.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            140,
+            181,
+            249
+        ]
+    },
+    {
+        "timestamp": 6.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            379,
+            142,
+            180,
+            246
+        ]
+    },
+    {
+        "timestamp": 6.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            378,
+            142,
+            180,
+            244
+        ]
+    },
+    {
+        "timestamp": 6.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            378,
+            139,
+            179,
+            243
+        ]
+    },
+    {
+        "timestamp": 6.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            137,
+            181,
+            243
+        ]
+    },
+    {
+        "timestamp": 6.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            377,
+            133,
+            180,
+            243
+        ]
+    },
+    {
+        "timestamp": 6.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            374,
+            130,
+            181,
+            245
+        ]
+    },
+    {
+        "timestamp": 6.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            370,
+            127,
+            183,
+            250
+        ]
+    },
+    {
+        "timestamp": 6.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            127,
+            184,
+            249
+        ]
+    },
+    {
+        "timestamp": 6.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            365,
+            128,
+            183,
+            248
+        ]
+    },
+    {
+        "timestamp": 6.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            369,
+            131,
+            178,
+            243
+        ]
+    },
+    {
+        "timestamp": 6.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            133,
+            178,
+            241
+        ]
+    },
+    {
+        "timestamp": 6.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            135,
+            179,
+            238
+        ]
+    },
+    {
+        "timestamp": 6.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            135,
+            178,
+            238
+        ]
+    },
+    {
+        "timestamp": 6.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            134,
+            177,
+            239
+        ]
+    },
+    {
+        "timestamp": 6.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            135,
+            178,
+            238
+        ]
+    },
+    {
+        "timestamp": 6.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            133,
+            177,
+            240
+        ]
+    },
+    {
+        "timestamp": 6.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            134,
+            177,
+            239
+        ]
+    },
+    {
+        "timestamp": 6.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            365,
+            136,
+            177,
+            238
+        ]
+    },
+    {
+        "timestamp": 6.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            363,
+            136,
+            177,
+            239
+        ]
+    },
+    {
+        "timestamp": 6.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            359,
+            134,
+            180,
+            242
+        ]
+    },
+    {
+        "timestamp": 6.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            359,
+            133,
+            180,
+            242
+        ]
+    },
+    {
+        "timestamp": 6.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            361,
+            134,
+            179,
+            239
+        ]
+    },
+    {
+        "timestamp": 6.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            363,
+            133,
+            178,
+            240
+        ]
+    },
+    {
+        "timestamp": 6.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            365,
+            132,
+            179,
+            242
+        ]
+    },
+    {
+        "timestamp": 7.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            131,
+            179,
+            242
+        ]
+    },
+    {
+        "timestamp": 7.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            130,
+            180,
+            240
+        ]
+    },
+    {
+        "timestamp": 7.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            130,
+            180,
+            240
+        ]
+    },
+    {
+        "timestamp": 7.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            364,
+            126,
+            185,
+            246
+        ]
+    },
+    {
+        "timestamp": 7.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            364,
+            126,
+            184,
+            246
+        ]
+    },
+    {
+        "timestamp": 7.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            364,
+            126,
+            185,
+            247
+        ]
+    },
+    {
+        "timestamp": 7.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            129,
+            182,
+            243
+        ]
+    },
+    {
+        "timestamp": 7.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            129,
+            182,
+            243
+        ]
+    },
+    {
+        "timestamp": 7.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            129,
+            183,
+            244
+        ]
+    },
+    {
+        "timestamp": 7.3,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            364,
+            126,
+            186,
+            251
+        ]
+    },
+    {
+        "timestamp": 7.33,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            365,
+            127,
+            185,
+            251
+        ]
+    },
+    {
+        "timestamp": 7.37,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            126,
+            185,
+            252
+        ]
+    },
+    {
+        "timestamp": 7.4,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            127,
+            184,
+            251
+        ]
+    },
+    {
+        "timestamp": 7.43,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            127,
+            185,
+            250
+        ]
+    },
+    {
+        "timestamp": 7.47,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            127,
+            185,
+            251
+        ]
+    },
+    {
+        "timestamp": 7.5,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            129,
+            185,
+            248
+        ]
+    },
+    {
+        "timestamp": 7.53,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            130,
+            184,
+            248
+        ]
+    },
+    {
+        "timestamp": 7.57,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            131,
+            184,
+            247
+        ]
+    },
+    {
+        "timestamp": 7.6,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            133,
+            185,
+            246
+        ]
+    },
+    {
+        "timestamp": 7.63,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            134,
+            185,
+            245
+        ]
+    },
+    {
+        "timestamp": 7.67,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            135,
+            185,
+            246
+        ]
+    },
+    {
+        "timestamp": 7.7,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            136,
+            185,
+            244
+        ]
+    },
+    {
+        "timestamp": 7.73,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            136,
+            185,
+            245
+        ]
+    },
+    {
+        "timestamp": 7.77,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            138,
+            185,
+            243
+        ]
+    },
+    {
+        "timestamp": 7.8,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            138,
+            185,
+            243
+        ]
+    },
+    {
+        "timestamp": 7.83,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            138,
+            185,
+            244
+        ]
+    },
+    {
+        "timestamp": 7.87,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            139,
+            185,
+            245
+        ]
+    },
+    {
+        "timestamp": 7.9,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            142,
+            186,
+            242
+        ]
+    },
+    {
+        "timestamp": 7.93,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            366,
+            142,
+            186,
+            244
+        ]
+    },
+    {
+        "timestamp": 7.97,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            367,
+            144,
+            185,
+            241
+        ]
+    },
+    {
+        "timestamp": 8.0,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            368,
+            145,
+            185,
+            240
+        ]
+    },
+    {
+        "timestamp": 8.03,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            369,
+            146,
+            184,
+            238
+        ]
+    },
+    {
+        "timestamp": 8.07,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            371,
+            146,
+            183,
+            238
+        ]
+    },
+    {
+        "timestamp": 8.1,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            372,
+            146,
+            183,
+            240
+        ]
+    },
+    {
+        "timestamp": 8.13,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            146,
+            181,
+            239
+        ]
+    },
+    {
+        "timestamp": 8.17,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            146,
+            181,
+            239
+        ]
+    },
+    {
+        "timestamp": 8.2,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            372,
+            145,
+            184,
+            242
+        ]
+    },
+    {
+        "timestamp": 8.23,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            146,
+            182,
+            241
+        ]
+    },
+    {
+        "timestamp": 8.27,
+        "person_id": "person_1",
+        "coordinates_pixels": [
+            373,
+            146,
+            182,
+            241
+        ]
+    }
+]

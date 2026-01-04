@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container {
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Video Upload Test</h1>
+        <p>This page tests the upload functionality directly without React.</p>
+        
+        <input type="file" id="videoFile" accept="video/*">
+        <br>
+        <button onclick="uploadVideo()" id="uploadBtn">Upload Video</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        async function uploadVideo() {
+            const fileInput = document.getElementById('videoFile');
+            const resultDiv = document.getElementById('result');
+            const uploadBtn = document.getElementById('uploadBtn');
+            
+            if (!fileInput.files[0]) {
+                resultDiv.className = 'result error';
+                resultDiv.innerHTML = '❌ Please select a video file first!';
+                return;
+            }
+            
+            const file = fileInput.files[0];
+            
+            // Show uploading status
+            resultDiv.className = 'result info';
+            resultDiv.innerHTML = '📤 Uploading... Please wait.';
+            uploadBtn.disabled = true;
+            
+            // Create FormData
+            const formData = new FormData();
+            formData.append('video', file);
+            
+            console.log('Uploading file:', {
+                name: file.name,
+                size: file.size,
+                type: file.type
+            });
+            
+            try {
+                const response = await fetch('http://localhost:8000/api/jobs/upload/', {
+                    method: 'POST',
+                    body: formData,
+                    // Don't set Content-Type header - browser will set it with boundary
+                });
+                
+                console.log('Response status:', response.status);
+                const data = await response.json();
+                console.log('Response data:', data);
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.innerHTML = `
+                        <h3>✅ Upload Successful!</h3>
+                        <p><strong>Job ID:</strong> ${data.job_id}</p>
+                        <p><strong>Status:</strong> ${data.status}</p>
+                        <p><strong>Message:</strong> ${data.message}</p>
+                        <p><strong>Colab URL:</strong><br>
+                        <a href="${data.colab_url}" target="_blank">${data.colab_url}</a></p>
+                    `;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.innerHTML = `
+                        <h3>❌ Upload Failed</h3>
+                        <p>${data.error || data.details || JSON.stringify(data)}</p>
+                    `;
+                }
+            } catch (error) {
+                console.error('Upload error:', error);
+                resultDiv.className = 'result error';
+                resultDiv.innerHTML = `
+                    <h3>❌ Upload Error</h3>
+                    <p>${error.message}</p>
+                    <p>Make sure the backend is running on http://localhost:8000</p>
+                `;
+            } finally {
+                uploadBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>

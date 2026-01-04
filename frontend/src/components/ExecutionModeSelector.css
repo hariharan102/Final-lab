@@ -1,0 +1,143 @@
+/**
+ * Execution Mode Selector Styles
+ */
+
+.execution-mode-selector {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.selector-title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.mode-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 25px;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 150px;
+}
+
+.mode-button:hover {
+  border-color: #0066cc;
+  background: #f0f7ff;
+}
+
+.mode-button.active {
+  border-color: #0066cc;
+  background: #e6f2ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+.mode-icon {
+  font-size: 28px;
+}
+
+.mode-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.mode-details {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.mode-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
+
+.mode-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.mode-features li {
+  font-size: 12px;
+  color: #555;
+  padding: 6px 10px;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mode-features li::before {
+  content: '✓';
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Compact variant for header */
+.execution-mode-selector.compact {
+  padding: 10px 15px;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+
+.execution-mode-selector.compact .selector-title {
+  display: none;
+}
+
+.execution-mode-selector.compact .mode-toggle {
+  gap: 5px;
+}
+
+.execution-mode-selector.compact .mode-button {
+  flex-direction: row;
+  padding: 8px 12px;
+  min-width: auto;
+  gap: 6px;
+}
+
+.execution-mode-selector.compact .mode-icon {
+  font-size: 18px;
+}
+
+.execution-mode-selector.compact .mode-name {
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .mode-toggle {
+    flex-direction: column;
+  }
+  
+  .mode-features {
+    grid-template-columns: 1fr;
+  }
+}
