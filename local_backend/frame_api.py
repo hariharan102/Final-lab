@@ -93,11 +93,11 @@ def get_face_tracker():
     
     if _face_tracker is None:
         _face_tracker = FaceTracker(
-            similarity_threshold=0.45,  # Very lenient for video with movement
-            max_disappeared=200,  # Very long persistence (66 seconds with frame skip)
-            update_alpha=0.85  # More adaptive to changes
+            similarity_threshold=0.35,  # Extremely lenient (risk: may merge different people)
+            max_disappeared=300,  # Very long persistence (100 seconds with frame skip=5)
+            update_alpha=0.75  # Very adaptive to rapid changes
         )
-        print("[FrameAPI] Face tracker initialized (similarity=0.45, max_disappeared=200)")
+        print("[FrameAPI] Face tracker initialized (similarity=0.35, max_disappeared=300)")
     return _face_tracker
 
 

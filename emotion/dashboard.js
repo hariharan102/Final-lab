@@ -8,7 +8,7 @@ const LOG=document.getElementById('log');
 const SERVER='http://localhost:8001/local/process-frame';
 const FPS=2;
 const MAX_WIDTH=640;
-const FRAME_SKIP=10; // Process 1 out of every 10 frames
+const FRAME_SKIP=5; // Process 1 out of every 5 frames (more frequent for better tracking)
 
 let stream=null, video=null, canvas=null, ctx=null, interval=null;
 let sessionId=0;
@@ -148,10 +148,33 @@ async function resetTracker(){
 }
 
 function downloadCsv(){
-  let csv='timestamp,person_id,dominant,angry,disgust,fear,happy,neutral,sad,surprise\n';
-  rows.forEach(r=>{
-    csv+=`${r.timestamp},${r.person_id||'N/A'},${r.dominant},${r.angry},${r.disgust},${r.fear},${r.happy},${r.neutral},${r.sad},${r.surprise}\n`;
+  // Pivot format: columns = persons, rows = timestamps, cells = dominant emotion
+  
+  // Group data by timestamp
+  const byTimestamp = {};
+  rows.forEach(r => {
+    if (!byTimestamp[r.timestamp]) {
+      byTimestamp[r.timestamp] = {};
+    }
+    byTimestamp[r.timestamp][`Person ${r.person_id}`] = r.dominant;
   });
+  
+  // Get all unique person IDs (sorted)
+  const personIds = [...new Set(rows.map(r => r.person_id))].sort((a,b) => a-b);
+  const personCols = personIds.map(id => `Person ${id}`);
+  
+  // Build CSV header
+  let csv = 'Timestamp,' + personCols.join(',') + '\n';
+  
+  // Build CSV rows
+  Object.keys(byTimestamp).sort().forEach(timestamp => {
+    const row = [timestamp];
+    personCols.forEach(personCol => {
+      row.push(byTimestamp[timestamp][personCol] || '');
+    });
+    csv += row.join(',') + '\n';
+  });
+  
   const blob=new Blob([csv],{type:'text/csv'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
