@@ -12,6 +12,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { getJobResults, getVideoStreamUrl } from '../services/api';
 import { useExecutionMode } from '../context/ExecutionModeContext';
 import EmotionChart from '../components/EmotionChart';
+import SummaryChart from '../components/SummaryChart';
 import './ResultsPage.css';
 
 // API base URLs
@@ -228,6 +229,19 @@ function ResultsPage() {
             <span>Disgust</span>
           </div>
         </div>
+      </div>
+
+      {/* Summary Chart - All People */}
+      <div className="emotion-section">
+        <h3>📊 Emotion Summary - All People</h3>
+        <p style={{ textAlign: 'center', color: '#666', marginBottom: '1rem' }}>
+          Dominant emotion for each person across all frames
+        </p>
+        {results?.emotion_data && typeof results.emotion_data === 'object' && Object.keys(results.emotion_data).length > 0 ? (
+          <SummaryChart emotionData={results.emotion_data} />
+        ) : (
+          <p className="no-data">No emotion data available</p>
+        )}
       </div>
 
       {/* Emotion Analysis */}
