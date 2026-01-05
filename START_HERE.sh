@@ -64,7 +64,20 @@ echo -e "${GREEN}✅ React Frontend started (PID: $FRONTEND_PID)${NC}"
 # Wait for servers to start
 echo ""
 echo -e "${YELLOW}Waiting for servers to initialize...${NC}"
-sleep 5
+echo -e "${YELLOW}(TensorFlow loading may take 10-15 seconds)${NC}"
+
+# Wait for Local Backend to be ready (TensorFlow takes time)
+MAX_WAIT=20
+WAITED=0
+while [ $WAITED -lt $MAX_WAIT ]; do
+    if curl -s http://localhost:8001/health > /dev/null 2>&1; then
+        break
+    fi
+    sleep 1
+    WAITED=$((WAITED + 1))
+    echo -ne "\r${YELLOW}Waiting... ${WAITED}s${NC}"
+done
+echo ""
 
 # Verify servers
 echo ""
@@ -73,7 +86,7 @@ echo -e "${CYAN}Verifying servers...${NC}"
 if curl -s http://localhost:8001/health > /dev/null 2>&1; then
     echo -e "${GREEN}✅ Local Backend: RUNNING${NC}"
 else
-    echo -e "${RED}❌ Local Backend: FAILED${NC}"
+    echo -e "${RED}❌ Local Backend: FAILED (check logs/local_backend.log)${NC}"
 fi
 
 if curl -s http://localhost:3000 > /dev/null 2>&1; then
@@ -82,10 +95,10 @@ else
     echo -e "${RED}❌ React Frontend: FAILED${NC}"
 fi
 
-if curl -s http://localhost:8001/local/frame-api-status | grep -q "ml_libraries_available.*true"; then
+if curl -s http://localhost:8001/local/frame-api-status 2>/dev/null | grep -q "ml_libraries_available.*true"; then
     echo -e "${GREEN}✅ ML Libraries: WORKING${NC}"
 else
-    echo -e "${YELLOW}⚠️  ML Libraries: Check status${NC}"
+    echo -e "${YELLOW}⚠️  ML Libraries: Still loading or check status${NC}"
 fi
 
 echo ""

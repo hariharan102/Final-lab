@@ -1,5 +1,6 @@
 const START=document.getElementById('start');
 const STOP=document.getElementById('stop');
+const RESET=document.getElementById('reset');
 const CSV=document.getElementById('csv');
 const STATUS=document.getElementById('status');
 const LOG=document.getElementById('log');
@@ -26,9 +27,18 @@ async function start(){
   const mySession=sessionId;
   activeSession=mySession;
 
+  // Reset face tracker when starting new capture
+  try {
+    await fetch('http://localhost:8001/local/reset-tracker', {method: 'POST'});
+    log('Face tracker reset');
+  } catch(e) {
+    log('Warning: Could not reset tracker');
+  }
+
   stream=await navigator.mediaDevices.getDisplayMedia({video:{cursor:'never'},audio:false});
   START.disabled=true;
   STOP.disabled=false;
+  RESET.disabled=false;
   STATUS.textContent='Status: capturing';
   log('Capture started');
 
@@ -74,31 +84,37 @@ async function capture(mySession){
       
       // Handle new frame API response format
       if(data && data.frame_processed && data.faces && data.faces.length > 0){
-        // Get the first detected face (primary person)
-        const face = data.faces[0];
-        const emotionScores = face.emotion_scores || {};
-        const emotion = face.emotion || 'unknown';
+        // Process ALL detected faces, not just the first one
+        const timestamp = new Date().toISOString();
+        const facesList = data.faces.map(f => `P${f.person_id}:${f.emotion}`).join(', ');
+        log(`Frame: ${data.total_faces} faces detected [${facesList}]`);
         
-        log(
-          `Person ${face.person_id} | emotion=${emotion} | `+
-          `angry=${(emotionScores.angry||0).toFixed(2)} `+
-          `fear=${(emotionScores.fear||0).toFixed(2)} `+
-          `happy=${(emotionScores.happy||0).toFixed(2)} `+
-          `neutral=${(emotionScores.neutral||0).toFixed(2)} `+
-          `sad=${(emotionScores.sad||0).toFixed(2)}`
-        );
+        // Log and save each person's emotions
+        data.faces.forEach(face => {
+          const emotionScores = face.emotion_scores || {};
+          const emotion = face.emotion || 'unknown';
+          
+          log(
+            `  Person ${face.person_id} | emotion=${emotion} | `+
+            `angry=${(emotionScores.angry||0).toFixed(2)} `+
+            `fear=${(emotionScores.fear||0).toFixed(2)} `+
+            `happy=${(emotionScores.happy||0).toFixed(2)} `+
+            `neutral=${(emotionScores.neutral||0).toFixed(2)} `+
+            `sad=${(emotionScores.sad||0).toFixed(2)}`
+          );
 
-        rows.push({
-          timestamp:new Date().toISOString(),
-          person_id:face.person_id,
-          dominant:emotion,
-          angry:emotionScores.angry||0,
-          disgust:emotionScores.disgust||0,
-          fear:emotionScores.fear||0,
-          happy:emotionScores.happy||0,
-          neutral:emotionScores.neutral||0,
-          sad:emotionScores.sad||0,
-          surprise:emotionScores.surprise||0
+          rows.push({
+            timestamp: timestamp,
+            person_id: face.person_id,
+            dominant: emotion,
+            angry: emotionScores.angry||0,
+            disgust: emotionScores.disgust||0,
+            fear: emotionScores.fear||0,
+            happy: emotionScores.happy||0,
+            neutral: emotionScores.neutral||0,
+            sad: emotionScores.sad||0,
+            surprise: emotionScores.surprise||0
+          });
         });
       } else if(data && data.frame_processed && data.total_faces === 0){
         log('No faces detected in frame');
@@ -117,8 +133,18 @@ function stop(){
   frameCounter=0; // Reset frame counter
   START.disabled=false;
   STOP.disabled=true;
+  RESET.disabled=true;
   STATUS.textContent='Status: stopped';
   log('Capture stopped');
+}
+
+async function resetTracker(){
+  try {
+    await fetch('http://localhost:8001/local/reset-tracker', {method: 'POST'});
+    log('Face tracker reset - Person IDs will restart from 1');
+  } catch(e) {
+    log('Error resetting tracker: ' + e.message);
+  }
 }
 
 function downloadCsv(){
@@ -133,8 +159,8 @@ function downloadCsv(){
   a.click();
 }
 
-START.onclick=start;
-STOP.onclick=stop;
-CSV.onclick=downloadCsv;
-
+START.addEventListener('click',start);
+STOP.addEventListener('click',stop);
+RESET.addEventListener('click',resetTracker);
+CSV.addEventListener('click',downloadCsv);
 log('Dashboard ready. Click Start to select a screen.');

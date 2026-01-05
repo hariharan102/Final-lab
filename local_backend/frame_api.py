@@ -93,11 +93,11 @@ def get_face_tracker():
     
     if _face_tracker is None:
         _face_tracker = FaceTracker(
-            similarity_threshold=0.65,
-            max_disappeared=30,
-            update_alpha=0.9
+            similarity_threshold=0.45,  # Very lenient for video with movement
+            max_disappeared=200,  # Very long persistence (66 seconds with frame skip)
+            update_alpha=0.85  # More adaptive to changes
         )
-        print("[FrameAPI] Face tracker initialized")
+        print("[FrameAPI] Face tracker initialized (similarity=0.45, max_disappeared=200)")
     return _face_tracker
 
 
@@ -172,8 +172,10 @@ async def process_frame(
             })
         
         # Track faces (assigns person IDs)
-        # Use frame timestamp = 0 for single frame processing
-        person_ids = tracker.update(face_data_list, timestamp=0.0)
+        # Use incrementing timestamp for proper tracking across frames
+        import time
+        current_timestamp = time.time()
+        person_ids = tracker.update(face_data_list, timestamp=current_timestamp)
         
         # Detect emotions for each face (same as core pipeline)
         results = []

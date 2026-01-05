@@ -30,6 +30,7 @@ class FaceTracker:
         self.max_disappeared = int(max_disappeared)
         self.update_alpha = float(update_alpha)
         self.disappeared_frames = defaultdict(int)
+        self.reusable_ids = []  # Pool of IDs that can be reused
 
     def _normalize(self, emb):
         emb = np.asarray(emb, dtype=np.float32).reshape(-1)
@@ -42,13 +43,18 @@ class FaceTracker:
         return float(np.dot(e1, e2))
 
     def _register(self, embedding, timestamp):
-        person_id = self.next_person_id
+        # Reuse IDs from disappeared people if available
+        if self.reusable_ids:
+            person_id = self.reusable_ids.pop(0)
+        else:
+            person_id = self.next_person_id
+            self.next_person_id += 1
+        
         self.active_people[person_id] = {
             "embedding": self._normalize(embedding),
             "last_seen": float(timestamp),
         }
         self.disappeared_frames[person_id] = 0
-        self.next_person_id += 1
         return person_id
 
     def _mark_disappeared(self):
@@ -57,6 +63,10 @@ class FaceTracker:
             if self.disappeared_frames[person_id] > self.max_disappeared:
                 del self.active_people[person_id]
                 del self.disappeared_frames[person_id]
+                # Add ID to reusable pool (keep sorted)
+                if person_id not in self.reusable_ids:
+                    self.reusable_ids.append(person_id)
+                    self.reusable_ids.sort()
 
     def update(self, faces, timestamp):
         if not faces:
@@ -117,6 +127,10 @@ class FaceTracker:
                 if self.disappeared_frames[pid] > self.max_disappeared:
                     del self.active_people[pid]
                     del self.disappeared_frames[pid]
+                    # Add ID to reusable pool
+                    if pid not in self.reusable_ids:
+                        self.reusable_ids.append(pid)
+                        self.reusable_ids.sort()
 
         return assigned_ids
 

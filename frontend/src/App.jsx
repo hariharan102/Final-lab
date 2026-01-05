@@ -25,7 +25,7 @@ function AppHeader() {
   
   return (
     <header className="App-header">
-      <h1>🎭 Offline Meeting Emotion Detection</h1>
+      <h1>🎭 Online and Offline Meeting Emotion Detection</h1>
       <p className="subtitle">
         {modeInfo?.icon || '🎯'} {mode === 'local' ? 'Local CPU Processing' : 'GPU Processing via Google Colab'}
       </p>
