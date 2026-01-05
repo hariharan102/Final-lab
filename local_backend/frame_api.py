@@ -189,25 +189,34 @@ async def process_frame(
             
             # Detect emotion using DeepFace (same as core pipeline)
             try:
-                emotion_result = detect_emotions_batch([face_crop])
+                # Use DeepFace.analyze to detect emotions
+                emotion_result = DeepFace.analyze(
+                    face_crop,
+                    actions=['emotion'],
+                    enforce_detection=False,
+                    detector_backend='skip'
+                )
                 
-                if emotion_result and len(emotion_result) > 0:
+                # DeepFace.analyze returns a list or dict depending on version
+                if isinstance(emotion_result, list):
                     emotion_data = emotion_result[0]
-                    
-                    results.append({
-                        "person_id": person_id,
-                        "bbox": {
-                            "x1": int(x1),
-                            "y1": int(y1),
-                            "x2": int(x2),
-                            "y2": int(y2)
-                        },
-                        "confidence": float(face_data["det_score"]),
-                        "emotion": emotion_data.get("dominant_emotion", "unknown"),
-                        "emotion_scores": emotion_data.get("emotion", {}),
-                        "face_width": int(x2 - x1),
-                        "face_height": int(y2 - y1)
-                    })
+                else:
+                    emotion_data = emotion_result
+                
+                results.append({
+                    "person_id": person_id,
+                    "bbox": {
+                        "x1": int(x1),
+                        "y1": int(y1),
+                        "x2": int(x2),
+                        "y2": int(y2)
+                    },
+                    "confidence": float(face_data["det_score"]),
+                    "emotion": emotion_data.get("dominant_emotion", "unknown"),
+                    "emotion_scores": emotion_data.get("emotion", {}),
+                    "face_width": int(x2 - x1),
+                    "face_height": int(y2 - y1)
+                })
             except Exception as e:
                 print(f"[FrameAPI] Emotion detection failed for face {idx}: {e}")
                 # Still return face detection result even if emotion fails
