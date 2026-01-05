@@ -220,8 +220,8 @@ def analyze_emotions(input_video, input_json, output_json, output_video, status_
                 cv2.rectangle(frame, (x, y - text_h - 10), (x + text_w + 10, y), person_color, -1)
                 cv2.putText(frame, label_pid, (x + 5, y - 5), font, font_scale, (255, 255, 255), thickness)
 
-                # Draw emotion label below the box
-                label_emotion = f"{dominant_emotion} ({confidence:.0f}%)"
+                # Draw emotion label below the box (without percentage)
+                label_emotion = f"{dominant_emotion}"
                 (emo_w, emo_h), _ = cv2.getTextSize(label_emotion, font, font_scale, thickness)
                 cv2.rectangle(frame, (x, y + h), (x + emo_w + 10, y + h + emo_h + 10), emotion_color, -1)
                 cv2.putText(frame, label_emotion, (x + 5, y + h + emo_h + 5), font, font_scale, (255, 255, 255), thickness)

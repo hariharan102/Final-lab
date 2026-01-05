@@ -187,14 +187,45 @@ function ResultsPage() {
             <span className="stat-label">Frames Processed</span>
           </div>
           <div className="stat-card">
-            <span className="stat-value">{results?.total_detections || 0}</span>
-            <span className="stat-label">Emotion Detections</span>
-          </div>
-          <div className="stat-card">
             <span className="stat-value">
               {results?.emotion_data ? Object.keys(results.emotion_data).length : 0}
             </span>
             <span className="stat-label">People Detected</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Emotion Color Palette Legend */}
+      <div className="color-palette-section">
+        <h3>🎨 Emotion Color Palette</h3>
+        <div className="color-palette">
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#4CAF50' }}></div>
+            <span>Happy</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#2196F3' }}></div>
+            <span>Sad</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#F44336' }}></div>
+            <span>Angry</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#9E9E9E' }}></div>
+            <span>Neutral</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#FF9800' }}></div>
+            <span>Surprise</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#9C27B0' }}></div>
+            <span>Fear</span>
+          </div>
+          <div className="color-item">
+            <div className="color-box" style={{ backgroundColor: '#795548' }}></div>
+            <span>Disgust</span>
           </div>
         </div>
       </div>
@@ -215,7 +246,7 @@ function ResultsPage() {
                       <p><strong>Total Frames:</strong> {data.frame_count || 'N/A'}</p>
                     </div>
 
-                    <EmotionChart emotions={data.emotions} />
+                    <EmotionChart emotions={data.emotions} frames={data.frames} />
 
                     <div className="emotion-list">
                       {Object.entries(data.emotions)

@@ -328,12 +328,13 @@ async def get_job_results(job_id: str, db: Session = Depends(get_db)):
             summary_by_person[pid]["emotions"][emotion] = 0
         summary_by_person[pid]["emotions"][emotion] += 1
         
-        # Add frame details
+        # Add frame details with all emotion scores
         summary_by_person[pid]["frames"].append({
             "timestamp": detection.get("timestamp"),
             "emotion": emotion,
             "confidence": detection.get("confidence"),
-            "coordinates": detection.get("coordinates_pixels")
+            "coordinates": detection.get("coordinates_pixels"),
+            "all_emotions": detection.get("all_emotions", {})
         })
     
     # Calculate total frames processed from the video
