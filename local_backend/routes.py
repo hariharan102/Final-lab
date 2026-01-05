@@ -27,7 +27,13 @@ from models import (
     LocalJob, get_db, init_db,
     INPUT_VIDEOS_DIR, OUTPUT_VIDEOS_DIR, OUTPUT_JSON_DIR, STATUS_DIR, TEMP_DIR
 )
-from pipeline.runner import run_emotion_pipeline
+# Try to import pipeline, but allow server to start without it
+try:
+    from pipeline.runner import run_emotion_pipeline
+    PIPELINE_AVAILABLE = True
+except ImportError as e:
+    PIPELINE_AVAILABLE = False
+    PIPELINE_IMPORT_ERROR = str(e)
 
 # Create API router with prefix for local backend
 router = APIRouter(prefix="/local", tags=["Local Jobs"])
@@ -139,6 +145,17 @@ async def upload_video(
         status: Initial status (PENDING)
         message: Confirmation message
     """
+    if not PIPELINE_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": "ML pipeline not available",
+                "message": "Video processing requires ML libraries that are not installed or incompatible with Python 3.14",
+                "solution": "Install Python 3.9-3.12 and run: pip install insightface deepface onnxruntime",
+                "import_error": PIPELINE_IMPORT_ERROR if 'PIPELINE_IMPORT_ERROR' in globals() else "Unknown"
+            }
+        )
+    
     print(f"📥 [Local Backend] Received upload: {video.filename}")
     
     # Validate file type

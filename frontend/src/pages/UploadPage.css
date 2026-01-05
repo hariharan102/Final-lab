@@ -143,6 +143,28 @@
   background: #ccc;
 }
 
+/* Error message styling */
+.error-message {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  color: #856404;
+  line-height: 1.6;
+}
+
+.error-message strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #d9534f;
+}
+
+.error-message p {
+  margin: 0.5rem 0;
+}
+
 /* Local mode specific info box */
 .info-box.local-info {
   background-color: #f3e8ff;

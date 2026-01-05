@@ -1,0 +1,5 @@
+.wrap{max-width:700px;margin:40px auto;font-family:system-ui}
+.controls{display:flex;gap:10px;margin-bottom:10px}
+button{padding:10px;border-radius:6px;border:1px solid #ccc}
+button.primary{background:#1976D2;color:#fff;border:none}
+#log{height:320px;overflow:auto;border:1px solid #eee;padding:10px;background:#fafafa;font-size:13px}
