@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Emotion Screen Capture",
+  "version": "5.1",
+  "description": "Tab-based screen capture with parsed logs and CSV",
+  "permissions": ["storage"],
+  "host_permissions": ["http://localhost:8001/*"],
+  "action": {
+    "default_title": "Emotion Capture"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

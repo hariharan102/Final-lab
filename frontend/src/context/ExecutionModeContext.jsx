@@ -12,8 +12,8 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Execution modes
 export const EXECUTION_MODES = {
-  COLAB: 'colab',
-  LOCAL: 'local'
+  LOCAL: 'local',
+  COLAB: 'colab'
 };
 
 // Mode descriptions for UI
@@ -49,10 +49,10 @@ const ExecutionModeContext = createContext();
  * Provider component that wraps the app and provides execution mode state.
  */
 export function ExecutionModeProvider({ children }) {
-  // Load saved mode from localStorage, default to 'colab' for backward compatibility
+  // Load saved mode from localStorage, default to 'local' (Local Machine first)
   const [mode, setMode] = useState(() => {
     const saved = localStorage.getItem('executionMode');
-    const initialMode = saved || EXECUTION_MODES.COLAB;
+    const initialMode = saved || EXECUTION_MODES.LOCAL;
     console.log('[ExecutionModeProvider] Initializing with mode:', initialMode);
     return initialMode;
   });

@@ -43,6 +43,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from models import init_db
 from routes import router as jobs_router
+from frame_api import frame_router
 
 # Initialize FastAPI application
 app = FastAPI(
@@ -62,6 +63,7 @@ app = FastAPI(
     - `GET /local/jobs/{job_id}/status` - Get processing status
     - `GET /local/jobs/{job_id}/results` - Get results (video + JSON)
     - `GET /local/jobs/{job_id}/stream` - Stream processed video
+    - `POST /local/process-frame` - Process single frame (real-time)
     
     ### Note:
     This is a SEPARATE backend from the Colab backend running on port 8000.
@@ -89,6 +91,7 @@ app.add_middleware(
 
 # Include API routes
 app.include_router(jobs_router)
+app.include_router(frame_router)
 
 
 @app.on_event("startup")
@@ -122,7 +125,8 @@ async def root():
             "upload": "POST /local/jobs/upload",
             "status": "GET /local/jobs/{job_id}/status",
             "results": "GET /local/jobs/{job_id}/results",
-            "stream": "GET /local/jobs/{job_id}/stream"
+            "stream": "GET /local/jobs/{job_id}/stream",
+            "process_frame": "POST /local/process-frame"
         },
         "colab_backend": "http://localhost:8000 (separate service)",
         "docs": "/docs"

@@ -68,9 +68,36 @@ function UploadPage() {
       console.error('Upload error:', err);
       console.error('Error response:', err.response);
       
-      // Extract error message from various possible formats
       let errorMessage = 'Upload failed. Please try again.';
-      if (err.response?.data) {
+      
+      // Handle 503 Service Unavailable (ML libraries not available)
+      if (err.response?.status === 503 && err.response?.data?.detail) {
+        const detail = err.response.data.detail;
+        
+        // Check if it's the ML pipeline unavailable error
+        if (detail.error === 'ML pipeline not available' || detail.error === 'ML libraries not available') {
+          errorMessage = (
+            <div>
+              <strong>⚠️ ML Libraries Not Available</strong>
+              <p style={{marginTop: '10px', marginBottom: '10px'}}>
+                {detail.message || 'Video processing requires ML libraries that are not installed.'}
+              </p>
+              <p style={{marginTop: '10px', marginBottom: '10px'}}>
+                <strong>Solution:</strong> {detail.solution || 'Install Python 3.9-3.12 and the required ML libraries.'}
+              </p>
+              <p style={{marginTop: '10px', fontSize: '0.9em', color: '#666'}}>
+                <strong>Alternative:</strong> Switch to "Google Colab (GPU)" mode above to use GPU processing instead.
+              </p>
+            </div>
+          );
+        } else if (typeof detail === 'string') {
+          errorMessage = detail;
+        } else if (typeof detail === 'object') {
+          errorMessage = detail.message || JSON.stringify(detail);
+        }
+      }
+      // Extract error message from various possible formats
+      else if (err.response?.data) {
         if (typeof err.response.data === 'string') {
           errorMessage = err.response.data;
         } else if (err.response.data.error) {
