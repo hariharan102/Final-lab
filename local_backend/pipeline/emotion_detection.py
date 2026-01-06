@@ -29,15 +29,17 @@ def create_unique_color(identifier):
 
 
 def get_emotion_color(emotion):
-    """Return color based on emotion type."""
+    """Return color based on emotion type (BGR format for OpenCV)."""
+    # Colors match the website palette exactly
+    # Format: (B, G, R) for OpenCV
     emotion_colors = {
-        "angry": (0, 0, 255),      # Red
-        "disgust": (0, 128, 0),    # Dark Green
-        "fear": (128, 0, 128),     # Purple
-        "happy": (0, 255, 255),    # Yellow
-        "sad": (255, 0, 0),        # Blue
-        "surprise": (0, 165, 255), # Orange
-        "neutral": (128, 128, 128) # Gray
+        "happy": (80, 175, 76),      # #4CAF50 - Green
+        "sad": (243, 150, 33),       # #2196F3 - Blue
+        "angry": (54, 67, 244),      # #F44336 - Red
+        "neutral": (158, 158, 158),  # #9E9E9E - Gray
+        "surprise": (0, 152, 255),   # #FF9800 - Orange
+        "fear": (176, 39, 156),      # #9C27B0 - Purple
+        "disgust": (72, 85, 121)     # #795548 - Brown
     }
     return emotion_colors.get(emotion.lower(), (255, 255, 255))
 
